@@ -1,0 +1,49 @@
+.container {
+  text-align: center;
+}
+
+.style-page-heading {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-list li {
+  margin-bottom: 10px;
+}
+
+.content-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+.content-button:hover {
+  background-color: #2980b9;
+}
+
+.content-item {
+  display: flex;
+  align-items: center;
+}
+
+.content-count {
+  margin-left: 10px;
+  color: #333;
+}

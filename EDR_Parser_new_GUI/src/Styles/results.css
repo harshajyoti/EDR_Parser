@@ -1,0 +1,29 @@
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buttonContainer button {
+  margin: 10px;
+  padding: 10px 0;
+  width: 180px;
+  font-size: 16px;
+  background-color: #3934db;
+  border-radius: 7px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.buttonContainer button:hover {
+  background-color: #2f6d96;
+}
+
+.h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}

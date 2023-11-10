@@ -1,0 +1,722 @@
+.page-heading {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 30px;
+  }
+  
+  ul ul {
+    list-style-type: circle;
+    margin-left: 30px;
+  }
+  
+  ul ul ul {
+    list-style-type: square;
+    margin-left: 30px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  br {
+    display: block;
+    margin: 20px 0;
+    content: '';
+  }
+
+  .button-decor {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-left: 30px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  .button-decor:hover {
+    background-color: #2980b9;
+  }
+
+  .blocks-container {
+    display: flex;
+    margin-left: -60px;
+  }
+  
+  .block {
+    margin: 0 60px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .block-name {
+    font-weight: bold;
+    background-color: #390bb8;
+    color: white;
+    border-radius: 7px;
+    padding: 10px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .vertical-line {
+    border-left: 2px dashed black;
+    height: 5000px;
+    margin-left: 60%;
+  }
+  
+  .value-13 {
+    position: absolute;
+    left: 7.5%;
+    padding: 5px;
+    margin-top: 70px;
+  }
+  
+/* -------------------------------------------------- UE to SMF -------------------------------------------------- */
+  
+  .event-id-text-UE-SMF {
+    display: flex;
+    margin-left: 2%;
+    line-height: 2em;
+    font-weight: bold;
+  }
+
+  .line-container-UE-SMF {
+    display: flex;
+    align-items: center;
+    margin-left: -55px;
+  }
+
+  .horizontal-line-UE-SMF {
+    border: none;
+    border-top: 2px solid black;
+    width: 495px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-UE-SMF {
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 7px;
+  }
+
+/* ------------------------------------------------ UE to PeerSMF ------------------------------------------------ */
+  
+ .event-id-text-UE-PeerSMF {
+    display: flex;
+    margin-left: 2%;
+    line-height: 2em;
+    font-weight: bold;
+ }
+  
+  .line-container-UE-PeerSMF {
+    display: flex;
+    align-items: center;
+    margin-left: -55px;
+  }
+  
+  .horizontal-line-UE-PeerSMF {
+    border: none;
+    border-top: 2px solid black;
+    width: 225px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-UE-PeerSMF {
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 7px;
+  }
+  
+/* -------------------------------------------------- SMF to UE -------------------------------------------------- */
+
+  .event-id-text-SMF-UE {
+    display: flex;
+    margin-left: 2%;
+    line-height: 2em;
+    font-weight: bold;
+  }
+
+  .line-container-SMF-UE {
+    display: flex;
+    align-items: center;
+    margin-left: -55px;
+  }
+
+  .horizontal-line-SMF-UE {
+    border: none;
+    border-top: 2px solid black;
+    width: 495px;
+    margin-top: 0px;
+    margin-left: 60px;
+  }
+
+  .ray-line-SMF-UE {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    display: inline-block;
+    margin-left: -530px;
+    margin-right: 7px;
+  }
+
+/* ------------------------------------------------ PeerSMF to UE ------------------------------------------------ */
+
+  .event-id-text-PeerSMF-UE {
+    display: flex;
+    margin-left: 2%;
+    line-height: 2em;
+    font-weight: bold;
+  }
+
+  .line-container-PeerSMF-UE {
+    display: flex;
+    align-items: center;
+    margin-left: -55px;
+  }
+
+  .horizontal-line-PeerSMF-UE {
+    border: none;
+    border-top: 2px solid black;
+    width: 225px;
+    margin-top: 0px;
+    margin-left: 60px;
+  }
+
+  .ray-line-PeerSMF-UE {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    display: inline-block;
+    margin-left: -260px;
+    margin-right: 7px;
+  }
+
+/* ----------------------------------- PeerSMF to UE/UE to PeerSMF Bi-Direction ---------------------------------- */
+
+  .event-id-text-UE-PeerSMF-BiDir {
+    display: flex;
+    margin-left: 2%;
+    line-height: 2em;
+    font-weight: bold;
+  }
+
+  .line-container-UE-PeerSMF-BiDir {
+    display: flex;
+    align-items: center;
+    margin-left: -55px;
+  }
+
+  .horizontal-line-UE-PeerSMF-BiDir {
+    border: none;
+    border-top: 2px solid black;
+    width: 225px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-UE-PeerSMF-BiDir {
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 7px;
+  }
+
+  .ray-line-left-UE-PeerSMF-BiDir {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    display: inline-block;
+    margin-left: -280px; 
+    margin-right: 7px;
+  }
+
+/* --------------------------------------- SMF to UE/UE to SMF Bi-Direction -------------------------------------- */
+
+  .event-id-text-UE-SMF-BiDir {
+    display: flex;
+    margin-left: 2%;
+    line-height: 2em;
+    font-weight: bold;
+  }
+
+  .line-container-UE-SMF-BiDir {
+    display: flex;
+    align-items: center;
+    margin-left: -55px;
+  }
+
+  .horizontal-line-UE-SMF-BiDir {
+    border: none;
+    border-top: 2px solid black;
+    width: 495px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-UE-SMF-BiDir {
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 7px;
+  }
+
+  .ray-line-left-UE-SMF-BiDir {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    display: inline-block;
+    margin-left: -550px;
+    margin-right: 7px;
+  }
+
+/* ----------------------------------------------- PeerSMF to SMF ------------------------------------------------ */
+                                                
+                                                /* only for Roaming */
+
+  .event-id-text-PeerSMF-SMF {
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 600px;
+    line-height: 2em;
+    margin-left: 260px;
+    font-weight: bold;
+  }
+
+  .line-container-PeerSMF-SMF {
+    display: flex;
+    align-items: center;
+    margin-left: 210px;
+  }
+
+  .horizontal-line-PeerSMF-SMF {
+    border: none;
+    border-top: 2px solid black;
+    width: 225px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-PeerSMF-SMF {
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 7px;
+  }
+
+  /* ----------------------------------------------- SMF to PeerSMF ------------------------------------------------ */
+                                                
+                                                /* only for Roaming */
+
+  .event-id-text-SMF-PeerSMF {
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 600px;
+    line-height: 2em;
+    margin-left: 260px;
+    font-weight: bold;
+  }
+
+  .line-container-SMF-PeerSMF {
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
+  }
+
+  .horizontal-line-SMF-PeerSMF {
+    border: none;
+    border-top: 2px solid black;
+    width: 235px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-SMF-PeerSMF {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    display: inline-block;
+    margin-left: -270px;
+    margin-right: 7px;
+  }
+                                              
+
+/* ----------------------------------------------- SMF to PCF and Bi-Directional ------------------------------------------------ */
+                                                
+  .event-id-text-SMF-PCF {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 600px;
+    line-height: 2em;
+    margin-left: 535px;
+    font-weight: bold;
+  }
+
+  .line-container-SMF-PCF {
+    display: flex;
+    align-items: center;
+    margin-left: 480px;
+  }
+
+  .horizontal-line-SMF-PCF {
+    border: none;
+    border-top: 2px solid black;
+    width: 390px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-SMF-PCF {
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 7px;
+  }
+
+  .ray-line-left-SMF-PCF-BiDir {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    display: inline-block;
+    margin-left: -445px;
+    margin-right: 7px;
+  }
+  
+/* -------------------------------------- SMF to UDM and Bi-Directional -------------------------------------- */
+
+  .event-id-text-SMF-UDM {
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 600px;
+    line-height: 2em;
+    margin-left: 535px;
+    font-weight: bold;
+  }
+
+  .line-container-SMF-UDM {
+    display: flex;
+    align-items: center;
+    margin-left: 480px;
+  }
+
+  .horizontal-line-SMF-UDM {
+    border: none;
+    border-top: 2px solid black;
+    width: 200px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-SMF-UDM {
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 7px;
+  }
+  
+  .ray-line-left-SMF-UDM-BiDir {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    display: inline-block;
+    margin-left: -255px;
+    margin-right: 7px;
+  }
+
+/* ----------------------------------------------- SMF to CHF and Bi-Directional ------------------------------------------------ */
+                                                
+  .event-id-text-SMF-CHF {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 600px;
+    line-height: 2em;
+    margin-left: 535px;
+    font-weight: bold;
+  }
+
+  .line-container-SMF-CHF {
+    display: flex;
+    align-items: center;
+    margin-left: 480px;
+  }
+
+  .horizontal-line-SMF-CHF {
+    border: none;
+    border-top: 2px solid black;
+    width: 577px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-SMF-CHF {
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 7px;
+  }
+
+  .ray-line-left-SMF-CHF-BiDir {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    display: inline-block;
+    margin-left: -632px;
+    margin-right: 7px;
+  }
+
+/* ----------------------------------------------- PeerSMF to CHF and Bi-Directional ------------------------------------------------ */
+                                                
+  .event-id-text-PeerSMF-CHF {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 600px;
+    line-height: 2em;
+    margin-left: 535px;
+    font-weight: bold;
+  }
+
+  .line-container-PeerSMF-CHF {
+    display: flex;
+    align-items: center;
+    margin-left: 202px;
+  }
+
+  .horizontal-line-PeerSMF-CHF {
+    border: none;
+    border-top: 2px solid black;
+    width: 858px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-PeerSMF-CHF {
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 7px;
+  }
+
+  .ray-line-left-PeerSMF-CHF-BiDir {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    display: inline-block;
+    margin-left: -907px;
+    margin-right: 7px;
+  }
+
+/* ----------------------------------------------- SMF to UPF and Bi-Directional ------------------------------------------------ */
+                                                
+  .event-id-text-SMF-UPF {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 600px;
+    line-height: 2em;
+    margin-left: 535px;
+    font-weight: bold;
+  }
+
+  .line-container-SMF-UPF {
+    display: flex;
+    align-items: center;
+    margin-left: 480px;
+  }
+
+  .horizontal-line-SMF-UPF {
+    border: none;
+    border-top: 2px solid black;
+    width: 765px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-SMF-UPF {
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 7px;
+  }
+
+  .ray-line-left-SMF-UPF-BiDir {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    display: inline-block;
+    margin-left: -820px;
+    margin-right: 7px;
+  }
+
+/* ----------------------------------------------- PeerSMF to UPF and Bi-Directional ------------------------------------------------ */
+                                                
+  .event-id-text-PeerSMF-UPF {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 600px;
+    line-height: 2em;
+    margin-left: 535px;
+    font-weight: bold;
+  }
+
+  .line-container-PeerSMF-UPF {
+    display: flex;
+    align-items: center;
+    margin-left: 202px;
+  }
+
+  .horizontal-line-PeerSMF-UPF {
+    border: none;
+    border-top: 2px solid black;
+    width: 1043px;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .ray-line-PeerSMF-UPF {
+    width: 0;
+    height: 0;
+    border-left: 20px solid black;
+    border-right: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 7px;
+  }
+
+  .ray-line-left-PeerSMF-UPF-BiDir {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    display: inline-block;
+    margin-left: -1093px;
+    margin-right: 7px;
+  }

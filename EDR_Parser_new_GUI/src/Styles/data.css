@@ -1,0 +1,42 @@
+.page-heading {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .sub-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .supi-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  
+  .supi-list li {
+    margin-bottom: 10px;
+  }
+  
+  .supi-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .supi-button:hover {
+    background-color: #2980b9;
+  }
